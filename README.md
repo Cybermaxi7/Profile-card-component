@@ -27,8 +27,8 @@ A
 
 ### Links
 
-- Solution URL: [Click here](https://your-solution-url.com)
-- Live Site URL: [Click here](https://your-live-site-url.com)
+- Solution URL: [Click here](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ/hub/responsive-profile-card-component-1h336ngA_c)
+- Live Site URL: [Click here](https://cybermaxi7.github.io/Profile-card-component/)
 
 
 ### Built with
