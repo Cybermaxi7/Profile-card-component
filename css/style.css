@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary1: hsl(185, 75%, 39%);
+  --color-primary2: hsl(229, 23%, 23%);
+  --color-primary3: hsl(227, 10%, 46%);
+  --color-neutral: hsl(0, 0%, 59%);
+}
+html {
+  font-size: 112.5%;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--color-primary1);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+.top-bg {
+  position: absolute;
+  top: -30rem;
+  left: -20rem;
+}
+.bottom-bg {
+  position: absolute;
+  bottom: -35rem;
+  right: -15rem;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.top {
+  position: relative;
+}
+.card-bg {
+  width: 100%;
+  /* z-index: 10; */
+}
+.avatar {
+  position: absolute;
+  bottom: -35%;
+  right: 50%;
+  transform: translate(50%, 0);
+  /* display: block;
+  margin: 0 auto;
+  margin-top: -3rem; */
+  border-radius: 50%;
+  border: 5px solid #fff;
+  /* z-index: 20; */
+}
+.middle {
+  margin-bottom: 1rem;
+  position: relative;
+}
+.middle h1 {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+  color: var(--color-primary2);
+}
+.middle h1 span {
+  color: var(--color-primary3);
+  margin-left: 0.7rem;
+}
+.middle p {
+  text-align: center;
+  color: var(--color-primary3);
+  font-size: 0.9rem;
+}
+
+.middle::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -1.5rem;
+  border-bottom: 1px solid var(--color-neutral);
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 3rem 2rem 3rem;
+}
+.item {
+  text-align: center;
+}
+
+.bottom h2 {
+  font-size: 1.2rem;
+  color: var(--color-primary2);
+}
+.bottom p {
+  font-size: 0.6rem;
+  color: var(--color-primary3);
+  letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 95%;
+  }
+  .top-bg {
+    position: absolute;
+    top: -30rem;
+    left: -50rem;
+  }
+  .bottom-bg {
+    position: absolute;
+    bottom: -30rem;
+    right: -50rem;
+  }
+}
